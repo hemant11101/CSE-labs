@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int conGCD(int m , int n)
+{
+	int t , opcount = 0;
+	if(m<n)
+	{
+		t = m ;
+	}
+	else
+	{
+		n = t ;
+	}
+	while(t--)
+	{
+		opcount ++ ;
+		if(m%t && n%t == 0)
+		{
+			return t ;
+			printf("%d",t) ;
+		}
+	}
+	printf("%d",opcount) ;
+
+
+} 
+
+int main()
+{
+	int i = conGCD(4,6) ;
+	return 0 ;
+}
